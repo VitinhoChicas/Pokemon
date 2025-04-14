@@ -30,16 +30,17 @@ Este projeto é uma revisão de Java com o framework Spring, contendo operaçõe
 ---
 
 
-# 🧠 **Comentários escritos por mim para facilitar a compreensão do código**
+# 🧠 **Comentários escritos  para facilitar a compreensão do código**
 
 ---
 
 ### 🟦 Classe: `TestConfig`
 
-🧩 _**@Configuration**_  
+**@Configuration**  
 📝 Indica que esta é uma classe de configuração do Spring. Ela será processada para registrar beans no contexto da aplicação.
 
-⏱️ _**@PostConstruct**_  
+
+**@PostConstruct**   
 🛠️ Esse método é executado automaticamente **após a injeção de todas as dependências**, ou seja, depois que o Spring inicializa o objeto.  
 É utilizado aqui para **preparar o banco de dados com dados iniciais**.
 
@@ -54,32 +55,32 @@ public void initDB() {
 
 ### 🟦 Classe: `PokemonDTO`
 
-🧠 **Utilização da variável int e Integer**
+**Utilização da variável int e Integer**
 
-- 🔢 **Integer**: é um objeto que **pode ser null**.
-- 🔢 **int**: é um tipo primitivo que **nunca pode ser null** (se não for definido, vira **0** automaticamente).
+- **Integer**: é um objeto que **pode ser null**.
+- **int**: é um tipo primitivo que **nunca pode ser null** (se não for definido, vira **0** automaticamente).
 
-🔄 **Conversão automática:**
+**Conversão automática:**
 - **Integer → int**: o Java faz unboxing.
 - **int → Integer**: o Java faz autoboxing.
 
-✅ **Validações com anotações:**
+**Validações com anotações:**
 
-- 🔒 **@NotNull**: O valor não pode ser null.
-- 🚫 **@NotBlank**: O valor não pode ser null, vazio ou conter apenas espaços.
+- **@NotNull**: O valor não pode ser null.
+- **@NotBlank**: O valor não pode ser null, vazio ou conter apenas espaços.
 
-📏 **Validações numéricas:**
+**Validações numéricas:**
 
-- ➖ **@Min(1)**: O valor deve ser ≥ 1  
-- ➕ **@Positive**: O valor deve ser > 0  
-- ⚖️ **@PositiveOrZero**: O valor deve ser ≥ 0
+- **@Min(1)**: O valor deve ser ≥ 1  
+- **@Positive**: O valor deve ser > 0  
+- **@PositiveOrZero**: O valor deve ser ≥ 0
 
 ---
 
 ### 🟪 Enum: `NiveisPokemon`
 
-🧠 Método `static` evita a criação de instâncias do enum.  
-🔍 Ele transforma o `id` em um enum correspondente. Caso o `id` seja inválido, uma exceção é lançada.
+🛠️ Método `static` evita a criação de instâncias do enum.  
+Ele transforma o `id` em um enum correspondente. Caso o `id` seja inválido, uma exceção é lançada.
 
 ```plantuml
 public static NiveisPokemon toEnum(Integer id){  
@@ -95,29 +96,29 @@ public static NiveisPokemon toEnum(Integer id){
 
 ### 🟦 Classe: `Pokemon`
 
-📌 _**@Entity**_  
-📝 Indica que a classe é uma entidade do JPA.
+**@Entity**  
+📝Indica que a classe é uma entidade do JPA.
 
-📂 _**@Table(name = "pokemon")**_  
-🛠️ Cria a tabela automaticamente no banco de dados com o nome "pokemon".
+**@Table(name = "pokemon")**   
+📝Cria a tabela automaticamente no banco de dados com o nome "pokemon".
 
-🆔 _**@Id**_  
-📝 Marca o atributo como chave primária.
+**@Id**   
+📝Marca o atributo como chave primária.
 
-🎚️ _**@Enumerated(EnumType.ORDINAL)**_  
-📝 Define que o enum será armazenado como número (posição ordinal).
+**@Enumerated(EnumType.ORDINAL)**  
+📝Define que o enum será armazenado como número (posição ordinal).
 
-🔗 **@JoinColumn(name = "tipoPokemon")**  
-📝 Define a coluna que representa a chave estrangeira para outra entidade.
+**@JoinColumn(name = "tipoPokemon")**  
+📝Define a coluna que representa a chave estrangeira para outra entidade.
 
-🚫 **@Column(unique = true)**  
-📝 Garante que o valor da coluna seja único na tabela.
+**@Column(unique = true)**  
+📝Garante que o valor da coluna seja único na tabela.
 
 ---
 
 ### 🟩 Interface: `PokemonRepository`
 
-🔍 É usado para consultar o banco de dados e buscar um Pokémon com base no valor do CPF do Pokémon
+🛠️Esse método é usado para consultar o banco de dados e buscar um Pokémon com base no valor do CPF do Pokémon
 
 ```plantuml
 Optional<Pokemon> findByCpfPokemon(String cpfPokemon);
@@ -127,14 +128,13 @@ Optional<Pokemon> findByCpfPokemon(String cpfPokemon);
 
 ### 🟦 Classe: `PokemonResource`
 
-🌐 **@RestController**  
-📝 Marca a classe como controller REST — os métodos retornam JSON.
+**@RestController**  
+📝Marca a classe como controller REST — os métodos retornam JSON.
 
-📍 **@RequestMapping(value = "/pokemon")**  
-🛠️ Define o endpoint base para os métodos do controller.
+**@RequestMapping(value = "/pokemon")**  
+📝Define o endpoint base para os métodos do controller.
 
-📄 **GET - Buscar todos os Pokémons**
-
+🛠️**GET - Buscar todos os Pokémons**
 ```plantuml
 @GetMapping  
 public ResponseEntity<List<PokemonDTO>> findAll(){  
@@ -142,7 +142,7 @@ public ResponseEntity<List<PokemonDTO>> findAll(){
 }
 ```
 
-🔍 **GET - Buscar por ID**
+🛠️**GET - Buscar por ID**
 
 ```plantuml
 @GetMapping(value = "/{id}")  
@@ -152,10 +152,10 @@ public ResponseEntity<PokemonDTO> findbyId(@PathVariable Long id){
 }
 ```
 
-📌 **@PathVariable**  
-📝 Extrai o valor diretamente da URL.
+**@PathVariable**  
+📝Extrai o valor diretamente da URL.
 
-🔍 **GET - Buscar por CPF do Pokémon**
+🛠️**GET - Buscar por CPF do Pokémon**
 
 ```plantuml
 @GetMapping(value = "/cpfPokemon/{cpfPokemon}")  
@@ -165,7 +165,7 @@ public ResponseEntity<PokemonDTO> findById(@PathVariable String cpfPokemon){
 }
 ```
 
-➕ **POST - Criar um novo Pokémon**
+🛠️**POST - Criar um novo Pokémon**
 
 ```plantuml
 @PostMapping  
@@ -176,10 +176,10 @@ public ResponseEntity<PokemonDTO> create(@Valid @RequestBody PokemonDTO pokemonD
 }
 ```
 
-🛡️ **@Valid**  
-📝 Ativa as validações do DTO antes de processar a requisição.
+**@Valid**  
+📝Ativa as validações do DTO antes de processar a requisição.
 
-♻️ **PUT - Atualizar Pokémon**
+🛠️**PUT - Atualizar Pokémon**
 
 ```plantuml
 @PutMapping(value = "/{id}")  
@@ -189,7 +189,7 @@ public ResponseEntity<PokemonDTO> update(@PathVariable Long id, @Valid @RequestB
 }
 ```
 
-🗑️ **DELETE - Deletar Pokémon**
+🛠️**DELETE - Deletar Pokémon**
 
 ```plantuml
 @DeleteMapping(value =  "/{id}")  
@@ -203,14 +203,14 @@ public ResponseEntity<PokemonDTO> delete(@PathVariable Long id){
 
 ### 🟦 Classe: `DBService`
 
-🔁 **@Autowired**  
-📝 Injeta uma instância já existente, evitando a criação manual.
+**@Autowired**  
+📝Injeta uma instância já existente, evitando a criação manual.
 
 ---
 
 ### 🟦 Classe: `PokemonService`
 
-📄 **Buscar todos os Pokémons**
+🛠️**Buscar todos os Pokémons**
 
 ```plantuml
 public List<PokemonDTO> findAll(){  
@@ -219,7 +219,7 @@ public List<PokemonDTO> findAll(){
 }
 ```
 
-🔍 **Buscar por ID**
+🛠️**Buscar por ID**
 
 ```plantuml
 public Pokemon findbyId(Long id){  
@@ -228,7 +228,7 @@ public Pokemon findbyId(Long id){
 }
 ```
 
-🔍 **Buscar por CPF**
+🛠️**Buscar por CPF**
 
 ```plantuml
 public Pokemon findbyCpfPokemon(String cpfPokemon){  
@@ -237,7 +237,7 @@ public Pokemon findbyCpfPokemon(String cpfPokemon){
 }
 ```
 
-➕ **Criar Pokémon**
+🛠️**Criar Pokémon**
 
 ```plantuml
 public Pokemon create(PokemonDTO pokemonDTO){  
@@ -248,7 +248,7 @@ public Pokemon create(PokemonDTO pokemonDTO){
 }
 ```
 
-♻️ **Atualizar Pokémon**
+🛠️**Atualizar Pokémon**
 
 ```plantuml
 public Pokemon update(Long id,  PokemonDTO objDto){  
@@ -260,7 +260,7 @@ public Pokemon update(Long id,  PokemonDTO objDto){
 }
 ```
 
-🗑️ **Deletar Pokémon**
+🛠️**Deletar Pokémon**
 
 ```plantuml
 public void deletePokemon (Long id){  
@@ -273,6 +273,6 @@ public void deletePokemon (Long id){
 
 ### ⚙️ Arquivo: `application-test.properties`
 
-🛠️ Caminho para acessar o banco de dados de teste:
+📝Caminho para acessar o banco de dados de teste:
 
 🔗 [http://localhost:8080/h2-console](http://localhost:8080/h2-console)
