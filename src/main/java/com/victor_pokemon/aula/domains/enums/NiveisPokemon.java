@@ -10,7 +10,7 @@ public enum NiveisPokemon {
     private int id;
     private String niveisPokemon;
 
-    //Gerar contrutor cheio e get e set
+
 
 
     NiveisPokemon(int id, String niveisPokemon) {
@@ -35,7 +35,7 @@ public enum NiveisPokemon {
     }
 
 
-    //Esse mtodo statico faz com que o enum não precise de uma  instancia.
+    //Esse metodo statico faz com que o enum não precise de uma  instancia.
 
     /*Ele pegas os enums e transforma em id ,  quando voce for utilizar o enum voce
      informa apenas o id e ele tras a descrição do número, caso não seja um id valido
@@ -51,5 +51,5 @@ public enum NiveisPokemon {
     }
             throw new IllegalArgumentException("Nivél inválido");
 
-}
+    }
 }

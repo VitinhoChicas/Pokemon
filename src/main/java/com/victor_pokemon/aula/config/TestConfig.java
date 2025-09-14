@@ -18,7 +18,8 @@ public class TestConfig {
     private DBService dbService;
 
     @PostConstruct
-    // @PostConstruct: depois que o Spring cria o objeto e injeta todas as dependências, este mtodo é chamado automaticamente para preparar o banco de dados
+    // Esse metodo e executado automaticamente apps a injeção de todas as dependencias, ou seja, depois que o Spring inicializa o objeto.
+    //È utilizado aqui para preparar o banco de dados com dados iniciais.
     public void initDB(){
         this.dbService.initDB();
     }

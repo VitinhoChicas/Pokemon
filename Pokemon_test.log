@@ -1,157 +1,157 @@
-2025-04-12T03:41:56.428-03:00  INFO 3496 --- [medico] [restartedMain] c.victor_pokemon.aula.AulaApplication    : Starting AulaApplication using Java 17.0.12 with PID 3496 (C:\ProjetoSpring\Pokemon\target\classes started by Vitinho in C:\ProjetoSpring\Pokemon)
-2025-04-12T03:41:56.433-03:00  INFO 3496 --- [medico] [restartedMain] c.victor_pokemon.aula.AulaApplication    : The following 1 profile is active: "test"
-2025-04-12T03:41:56.545-03:00  INFO 3496 --- [medico] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-04-12T03:41:56.551-03:00  INFO 3496 --- [medico] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-04-12T03:41:57.123-03:00  INFO 3496 --- [medico] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-12T03:41:57.165-03:00  INFO 3496 --- [medico] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 1 JPA repository interface.
-2025-04-12T03:41:57.973-03:00  INFO 3496 --- [medico] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-12T03:41:57.986-03:00  INFO 3496 --- [medico] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-12T03:41:57.986-03:00  INFO 3496 --- [medico] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-12T03:41:58.028-03:00  INFO 3496 --- [medico] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-12T03:41:58.029-03:00  INFO 3496 --- [medico] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1474 ms
-2025-04-12T03:41:58.183-03:00  INFO 3496 --- [medico] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-12T03:41:58.411-03:00  INFO 3496 --- [medico] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bdaplcurso user=SA
-2025-04-12T03:41:58.414-03:00  INFO 3496 --- [medico] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-12T03:41:58.467-03:00  INFO 3496 --- [medico] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-12T03:41:58.530-03:00  INFO 3496 --- [medico] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-04-12T03:41:58.566-03:00  INFO 3496 --- [medico] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-12T03:41:58.653-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@3b8d6cd4
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@3b8d6cd4
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@3b8d6cd4
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@16c19d9f
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@16c19d9f
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@7afcf11f
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@7afcf11f
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@54f3a954
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@54f3a954
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@44894d2
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@44894d2
-2025-04-12T03:41:58.654-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@44894d2
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@1e7fcca1
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@1e7fcca1
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@1e7fcca1
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@a48f1cd
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@a48f1cd
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@6a323ee1
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@5c01c4bd
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@5c01c4bd
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@268f91c0
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@6b84ca45
-2025-04-12T03:41:58.655-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@103a24e2
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@103a24e2
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@103a24e2
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@424c3e74
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@424c3e74
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@424c3e74
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@1817b66c
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@1817b66c
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@1817b66c
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@550c91c9
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@550c91c9
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@550c91c9
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@1450b2be
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@1450b2be
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@1450b2be
-2025-04-12T03:41:58.656-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@374c91de
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@374c91de
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@12cdf58d
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@12cdf58d
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@237ebcc4
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@237ebcc4
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@237ebcc4
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@322a2f57
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@613b8aad
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@613b8aad
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@1ca76a9a
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@4a696d56
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@4a696d56
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@4a696d56
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@295aa3db
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@14092abf
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@33dd611e
-2025-04-12T03:41:58.657-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@32dfb9ee
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@32dfb9ee
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@4e678015
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@4e678015
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@136617b4
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@4b6b4157
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@4b4911d
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@7621ceb6
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@5559ac71
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@44292e74
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@64357395
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@64357395
-2025-04-12T03:41:58.658-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@1c1945db
-2025-04-12T03:41:58.659-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@1c1945db
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@43b480d
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@43b480d
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@9ec8c70
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@9ec8c70
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@460aff03
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@460aff03
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@106b5d84
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@4e4e04a4
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@23ac8e11
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@23ac8e11
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@324f9f80
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@78826330
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@46d723a0
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@14cf16d
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@14cf16d
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@4fb1dd5b
-2025-04-12T03:41:58.660-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@2441ac7e
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@5b744175
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@5b744175
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@3dd504ef
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@3dd504ef
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@7c4f4d0b
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@7c4f4d0b
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@7c4f4d0b
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@55443ca0
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@55443ca0
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@55443ca0
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@2c42a094
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@39a52b8f
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@3f841ea5
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@3f841ea5
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@4b5184c9
-2025-04-12T03:41:58.661-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@4b5184c9
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@4b5184c9
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@722ecb37
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@62c76fae
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@7da92465
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@7da92465
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@3a1990d5
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@3a1990d5
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@3a1990d5
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@3e6a83d2
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@3e6a83d2
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@678931ae
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@678931ae
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@5337ab36
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@5337ab36
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@25de16bd
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@25de16bd
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@4f4065c7
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@4f4065c7
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@61ea29c0
-2025-04-12T03:41:58.662-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@fea40d0
-2025-04-12T03:41:58.663-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@5ad4c46e
-2025-04-12T03:41:58.663-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@16f6ecae
-2025-04-12T03:41:58.663-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@26e27399
-2025-04-12T03:41:58.668-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@f3a3208
-2025-04-12T03:41:58.669-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@f3a3208
-2025-04-12T03:41:58.670-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@674d2a0f
-2025-04-12T03:41:58.671-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@5aa68083
-2025-04-12T03:41:58.671-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@352136f1
-2025-04-12T03:41:58.671-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@633c9d84
-2025-04-12T03:41:58.671-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@6d2fdebe
-2025-04-12T03:41:58.672-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@363e900
-2025-04-12T03:41:58.672-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@3fc9d123
-2025-04-12T03:41:58.672-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@389eabe3
-2025-04-12T03:41:58.672-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@2b575860
-2025-04-12T03:41:58.915-03:00  INFO 3496 --- [medico] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-12T03:41:59.013-03:00  INFO 3496 --- [medico] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+2025-09-14T00:51:12.992-03:00  INFO 12780 --- [pokemon] [restartedMain] c.victor_pokemon.aula.AulaApplication    : Starting AulaApplication using Java 17.0.12 with PID 12780 (C:\ProjetoSpring\Pokemon\target\classes started by Vitinho in C:\ProjetoSpring\Pokemon)
+2025-09-14T00:51:13.007-03:00  INFO 12780 --- [pokemon] [restartedMain] c.victor_pokemon.aula.AulaApplication    : The following 1 profile is active: "test"
+2025-09-14T00:51:13.107-03:00  INFO 12780 --- [pokemon] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-09-14T00:51:13.107-03:00  INFO 12780 --- [pokemon] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-09-14T00:51:13.969-03:00  INFO 12780 --- [pokemon] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-09-14T00:51:14.004-03:00  INFO 12780 --- [pokemon] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 1 JPA repository interface.
+2025-09-14T00:51:15.100-03:00  INFO 12780 --- [pokemon] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-09-14T00:51:15.115-03:00  INFO 12780 --- [pokemon] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-09-14T00:51:15.115-03:00  INFO 12780 --- [pokemon] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
+2025-09-14T00:51:15.158-03:00  INFO 12780 --- [pokemon] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-09-14T00:51:15.158-03:00  INFO 12780 --- [pokemon] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2050 ms
+2025-09-14T00:51:15.356-03:00  INFO 12780 --- [pokemon] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-09-14T00:51:15.638-03:00  INFO 12780 --- [pokemon] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bdaplcurso user=SA
+2025-09-14T00:51:15.642-03:00  INFO 12780 --- [pokemon] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-09-14T00:51:15.737-03:00  INFO 12780 --- [pokemon] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-09-14T00:51:15.843-03:00  INFO 12780 --- [pokemon] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
+2025-09-14T00:51:15.915-03:00  INFO 12780 --- [pokemon] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-09-14T00:51:16.045-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@3a3f1d79
+2025-09-14T00:51:16.046-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@3a3f1d79
+2025-09-14T00:51:16.046-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@3a3f1d79
+2025-09-14T00:51:16.046-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@3beb1958
+2025-09-14T00:51:16.046-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@3beb1958
+2025-09-14T00:51:16.047-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@752b49a2
+2025-09-14T00:51:16.047-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@752b49a2
+2025-09-14T00:51:16.047-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@d1e8c98
+2025-09-14T00:51:16.047-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@d1e8c98
+2025-09-14T00:51:16.047-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@4f088c97
+2025-09-14T00:51:16.047-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@4f088c97
+2025-09-14T00:51:16.048-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@4f088c97
+2025-09-14T00:51:16.048-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@2c4a6df7
+2025-09-14T00:51:16.049-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@2c4a6df7
+2025-09-14T00:51:16.049-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@2c4a6df7
+2025-09-14T00:51:16.049-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@716736c2
+2025-09-14T00:51:16.049-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@716736c2
+2025-09-14T00:51:16.050-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@ebdd8cc
+2025-09-14T00:51:16.050-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@171b89f1
+2025-09-14T00:51:16.050-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@171b89f1
+2025-09-14T00:51:16.050-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@6eebfbca
+2025-09-14T00:51:16.050-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@26f211f3
+2025-09-14T00:51:16.050-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@4669d659
+2025-09-14T00:51:16.050-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@4669d659
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@4669d659
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@d769b64
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@d769b64
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@d769b64
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@3cf214ab
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@3cf214ab
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@3cf214ab
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@a39e74f
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@a39e74f
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@a39e74f
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@26a334f
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@26a334f
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@26a334f
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@3bfe25dd
+2025-09-14T00:51:16.051-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@3bfe25dd
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@17053945
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@17053945
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@5243b775
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@5243b775
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@5243b775
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@1e01639
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@4bfa1b15
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@4bfa1b15
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@758bcc3e
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@3abc35e5
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@3abc35e5
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@3abc35e5
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@3b6cbd55
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@20d53b9e
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@b94e986
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@505cf60c
+2025-09-14T00:51:16.052-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@505cf60c
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@e046f47
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@e046f47
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@784bcd2
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@2b70bd7d
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@1c2bc289
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@31f8f81c
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@13b8b0dd
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@3d8d7c82
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@7f70de30
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@7f70de30
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@9bef1da
+2025-09-14T00:51:16.053-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@9bef1da
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@5f568668
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@5f568668
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@9e9886c
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@9e9886c
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@7091463f
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@7091463f
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@edf59d6
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@6551fba3
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@203ea58d
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@203ea58d
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@5a64bf0b
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@2e815c78
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@446736e8
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@11a0e124
+2025-09-14T00:51:16.054-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@11a0e124
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@6ec388fc
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@4a857bc0
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@3728d40e
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@3728d40e
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@2117ba0e
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@2117ba0e
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@53e142b8
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@53e142b8
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@53e142b8
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@32db787f
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@32db787f
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@32db787f
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@4322428e
+2025-09-14T00:51:16.055-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@5ff9572e
+2025-09-14T00:51:16.056-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@6d43aeb
+2025-09-14T00:51:16.056-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@6d43aeb
+2025-09-14T00:51:16.056-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@6fa5a2ce
+2025-09-14T00:51:16.056-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@6fa5a2ce
+2025-09-14T00:51:16.056-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@6fa5a2ce
+2025-09-14T00:51:16.056-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@3e42ab86
+2025-09-14T00:51:16.056-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@2b17db47
+2025-09-14T00:51:16.056-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@cb3afac
+2025-09-14T00:51:16.056-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@cb3afac
+2025-09-14T00:51:16.056-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@4e42cf26
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@4e42cf26
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@4e42cf26
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@65f743f3
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@65f743f3
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@702f71e9
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@702f71e9
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@61706e8f
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@61706e8f
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@3913a678
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@3913a678
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@66a49272
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@66a49272
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@6d8f0776
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@f69085e
+2025-09-14T00:51:16.057-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@2bed4fad
+2025-09-14T00:51:16.058-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@69986fa0
+2025-09-14T00:51:16.058-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@7cb97152
+2025-09-14T00:51:16.068-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@7b195f2b
+2025-09-14T00:51:16.068-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@7b195f2b
+2025-09-14T00:51:16.070-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@41103e2c
+2025-09-14T00:51:16.070-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@49be54ab
+2025-09-14T00:51:16.070-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@39864c14
+2025-09-14T00:51:16.070-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@69fe702d
+2025-09-14T00:51:16.070-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@295fd260
+2025-09-14T00:51:16.070-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@127fd0ec
+2025-09-14T00:51:16.071-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@1912c85b
+2025-09-14T00:51:16.071-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@377ac4c
+2025-09-14T00:51:16.071-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@54ecb290
+2025-09-14T00:51:16.375-03:00  INFO 12780 --- [pokemon] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-09-14T00:51:16.487-03:00  INFO 12780 --- [pokemon] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
 	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
 	Database driver: undefined/unknown
 	Database version: 2.3.232
@@ -159,26 +159,26 @@
 	Isolation level: undefined/unknown
 	Minimum pool size: undefined/unknown
 	Maximum pool size: undefined/unknown
-2025-04-12T03:41:59.022-03:00 DEBUG 3496 --- [medico] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
-2025-04-12T03:41:59.022-03:00 DEBUG 3496 --- [medico] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
-2025-04-12T03:41:59.023-03:00 DEBUG 3496 --- [medico] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
-2025-04-12T03:41:59.026-03:00 DEBUG 3496 --- [medico] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
-2025-04-12T03:41:59.027-03:00 DEBUG 3496 --- [medico] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
-2025-04-12T03:41:59.033-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
-2025-04-12T03:41:59.034-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
-2025-04-12T03:41:59.034-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
-2025-04-12T03:41:59.040-03:00 DEBUG 3496 --- [medico] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@73e55f2b] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3a7efc73]
-2025-04-12T03:41:59.684-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.SQL                        : 
+2025-09-14T00:51:16.498-03:00 DEBUG 12780 --- [pokemon] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-09-14T00:51:16.498-03:00 DEBUG 12780 --- [pokemon] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-09-14T00:51:16.500-03:00 DEBUG 12780 --- [pokemon] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-09-14T00:51:16.504-03:00 DEBUG 12780 --- [pokemon] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-09-14T00:51:16.506-03:00 DEBUG 12780 --- [pokemon] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2025-09-14T00:51:16.512-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-09-14T00:51:16.513-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-09-14T00:51:16.513-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-09-14T00:51:16.516-03:00 DEBUG 12780 --- [pokemon] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@465710be] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@717e8f74]
+2025-09-14T00:51:17.183-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.SQL                        : 
     create global temporary table HTE_pokemon(ataque integer, data_captura date, defesa integer, niveis_pokemon tinyint, pontos_de_vida integer, rn_ integer not null, tipo_pokemon tinyint, velocidade integer, id bigint, cpf_pokemon varchar(255), nome_pokemon varchar(255), primary key (rn_)) TRANSACTIONAL
-2025-04-12T03:41:59.770-03:00  INFO 3496 --- [medico] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-12T03:41:59.770-03:00 DEBUG 3496 --- [medico] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@73e55f2b] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@3897a254]
-2025-04-12T03:41:59.779-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.SQL                        : 
+2025-09-14T00:51:17.294-03:00  INFO 12780 --- [pokemon] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-09-14T00:51:17.294-03:00 DEBUG 12780 --- [pokemon] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@465710be] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@2a5056]
+2025-09-14T00:51:17.306-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.SQL                        : 
     drop table if exists pokemon cascade 
-2025-04-12T03:41:59.780-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.SQL                        : 
+2025-09-14T00:51:17.307-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_pokemon
-2025-04-12T03:41:59.783-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.SQL                        : 
+2025-09-14T00:51:17.310-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_pokemon start with 1 increment by 50
-2025-04-12T03:41:59.785-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.SQL                        : 
+2025-09-14T00:51:17.314-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.SQL                        : 
     create table pokemon (
         ataque integer not null,
         data_captura date,
@@ -192,496 +192,42 @@
         nome_pokemon varchar(255) not null,
         primary key (id)
     )
-2025-04-12T03:41:59.791-03:00 TRACE 3496 --- [medico] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@3897a254] for TypeConfiguration
-2025-04-12T03:41:59.791-03:00  INFO 3496 --- [medico] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-12T03:42:00.157-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.SQL                        : 
+2025-09-14T00:51:17.321-03:00 TRACE 12780 --- [pokemon] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@2a5056] for TypeConfiguration
+2025-09-14T00:51:17.321-03:00  INFO 12780 --- [pokemon] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14T00:51:17.852-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.SQL                        : 
     select
         next value for seq_pokemon
-2025-04-12T03:42:00.237-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.SQL                        : 
+2025-09-14T00:51:17.955-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         pokemon
         (ataque, cpf_pokemon, data_captura, defesa, niveis_pokemon, nome_pokemon, pontos_de_vida, tipo_pokemon, velocidade, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2025-04-12T03:42:00.245-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.SQL                        : 
+2025-09-14T00:51:17.965-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.SQL                        : 
     select
         next value for seq_pokemon
-2025-04-12T03:42:00.247-03:00 DEBUG 3496 --- [medico] [restartedMain] org.hibernate.SQL                        : 
+2025-09-14T00:51:17.966-03:00 DEBUG 12780 --- [pokemon] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         pokemon
         (ataque, cpf_pokemon, data_captura, defesa, niveis_pokemon, nome_pokemon, pontos_de_vida, tipo_pokemon, velocidade, id) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2025-04-12T03:42:00.319-03:00  WARN 3496 --- [medico] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-12T03:42:00.665-03:00  INFO 3496 --- [medico] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdaplcurso'
-2025-04-12T03:42:00.737-03:00  INFO 3496 --- [medico] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-04-12T03:42:00.778-03:00  INFO 3496 --- [medico] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-12T03:42:00.788-03:00  INFO 3496 --- [medico] [restartedMain] c.victor_pokemon.aula.AulaApplication    : Started AulaApplication in 4.929 seconds (process running for 5.318)
-2025-04-12T03:42:23.000-03:00  INFO 3496 --- [medico] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-12T03:42:23.107-03:00  INFO 3496 --- [medico] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-12T03:42:23.110-03:00  INFO 3496 --- [medico] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-12T03:42:23.111-03:00 DEBUG 3496 --- [medico] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+2025-09-14T00:51:18.147-03:00  WARN 12780 --- [pokemon] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-09-14T00:51:18.611-03:00  INFO 12780 --- [pokemon] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdaplcurso'
+2025-09-14T00:51:18.686-03:00  INFO 12780 --- [pokemon] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-09-14T00:51:18.731-03:00  INFO 12780 --- [pokemon] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-09-14T00:51:18.742-03:00  INFO 12780 --- [pokemon] [restartedMain] c.victor_pokemon.aula.AulaApplication    : Started AulaApplication in 6.308 seconds (process running for 6.752)
+2025-09-14T00:51:23.136-03:00  INFO 12780 --- [pokemon] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-09-14T00:51:23.262-03:00  INFO 12780 --- [pokemon] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-09-14T00:51:23.266-03:00  INFO 12780 --- [pokemon] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-09-14T00:51:23.266-03:00 DEBUG 12780 --- [pokemon] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
     drop table if exists pokemon cascade 
-2025-04-12T03:42:23.112-03:00 DEBUG 3496 --- [medico] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+2025-09-14T00:51:23.268-03:00 DEBUG 12780 --- [pokemon] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
     drop sequence if exists seq_pokemon
-2025-04-12T03:42:23.113-03:00 TRACE 3496 --- [medico] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@3897a254] for TypeConfiguration
-2025-04-12T03:42:23.113-03:00 DEBUG 3496 --- [medico] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@74204905] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@3897a254]
-2025-04-12T03:42:23.116-03:00  WARN 3496 --- [medico] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-2025-04-12T03:42:23.116-03:00  INFO 3496 --- [medico] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-12T03:42:23.117-03:00  INFO 3496 --- [medico] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-04-12T03:42:44.779-03:00  INFO 10864 --- [medico] [main] c.v.aula.AulaApplicationTests            : Starting AulaApplicationTests using Java 17.0.12 with PID 10864 (started by Vitinho in C:\ProjetoSpring\Pokemon)
-2025-04-12T03:42:44.781-03:00  INFO 10864 --- [medico] [main] c.v.aula.AulaApplicationTests            : The following 1 profile is active: "test"
-2025-04-12T03:42:45.199-03:00  INFO 10864 --- [medico] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-12T03:42:45.234-03:00  INFO 10864 --- [medico] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 27 ms. Found 1 JPA repository interface.
-2025-04-12T03:42:45.786-03:00  INFO 10864 --- [medico] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-12T03:42:45.990-03:00  INFO 10864 --- [medico] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bdaplcurso user=SA
-2025-04-12T03:42:45.992-03:00  INFO 10864 --- [medico] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-12T03:42:46.064-03:00  INFO 10864 --- [medico] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-12T03:42:46.130-03:00  INFO 10864 --- [medico] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-04-12T03:42:46.174-03:00  INFO 10864 --- [medico] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-12T03:42:46.281-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@37ca3ca8
-2025-04-12T03:42:46.282-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@37ca3ca8
-2025-04-12T03:42:46.282-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@37ca3ca8
-2025-04-12T03:42:46.282-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@191ec193
-2025-04-12T03:42:46.282-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@191ec193
-2025-04-12T03:42:46.282-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@6321a5aa
-2025-04-12T03:42:46.282-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@6321a5aa
-2025-04-12T03:42:46.282-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@1c7f9861
-2025-04-12T03:42:46.282-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@1c7f9861
-2025-04-12T03:42:46.282-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@7a36c83a
-2025-04-12T03:42:46.282-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@7a36c83a
-2025-04-12T03:42:46.283-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@7a36c83a
-2025-04-12T03:42:46.283-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@154b8cb6
-2025-04-12T03:42:46.283-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@154b8cb6
-2025-04-12T03:42:46.283-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@154b8cb6
-2025-04-12T03:42:46.283-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@57ce2898
-2025-04-12T03:42:46.283-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@57ce2898
-2025-04-12T03:42:46.283-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@1ea930eb
-2025-04-12T03:42:46.283-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@2e0ad709
-2025-04-12T03:42:46.283-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@2e0ad709
-2025-04-12T03:42:46.283-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@1fe8f5e8
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@39449465
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@6e3dd5ce
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@6e3dd5ce
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@6e3dd5ce
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@16f7f59f
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@16f7f59f
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@16f7f59f
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@4ee8051c
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@4ee8051c
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@4ee8051c
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@53125718
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@53125718
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@53125718
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@53016b11
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@53016b11
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@53016b11
-2025-04-12T03:42:46.284-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@7af327e3
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@7af327e3
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@743d0d44
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@743d0d44
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@35563e4c
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@35563e4c
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@35563e4c
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@6dd79214
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@ef86c72
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@ef86c72
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@123307c4
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@1693ff90
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@1693ff90
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@1693ff90
-2025-04-12T03:42:46.285-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@47058864
-2025-04-12T03:42:46.286-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@ad3f70a
-2025-04-12T03:42:46.286-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@54ccb3
-2025-04-12T03:42:46.286-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@9b2dc56
-2025-04-12T03:42:46.286-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@9b2dc56
-2025-04-12T03:42:46.286-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@621f23ac
-2025-04-12T03:42:46.286-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@621f23ac
-2025-04-12T03:42:46.286-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@7761e342
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@51f68849
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@4eb9ae4d
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@5520f675
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@2d237460
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@48f2054d
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@4b3a01d8
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@4b3a01d8
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@19fbc594
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@19fbc594
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@2f4d32bf
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@2f4d32bf
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@774d8276
-2025-04-12T03:42:46.287-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@774d8276
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@6ce26986
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@6ce26986
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@2bf2d6eb
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@6d6cd1e0
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@76a9a009
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@76a9a009
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@9785903
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@34009349
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@3f68a7f8
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@4faf1f4
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@4faf1f4
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@4f811029
-2025-04-12T03:42:46.288-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@7f2b584b
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@5866731
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@5866731
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@56a05324
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@56a05324
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@11e71181
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@11e71181
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@11e71181
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@342beaf6
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@342beaf6
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@342beaf6
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@222acad
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@56cfe6be
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@7f0d8eff
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@7f0d8eff
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@149aa7b2
-2025-04-12T03:42:46.289-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@149aa7b2
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@149aa7b2
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@3ca3648
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@2a99ca99
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@39f0c343
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@39f0c343
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@781654f8
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@781654f8
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@781654f8
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@2abc55c4
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@2abc55c4
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@4e958f08
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@4e958f08
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@71c0b742
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@71c0b742
-2025-04-12T03:42:46.290-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@3bbb8c16
-2025-04-12T03:42:46.291-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@3bbb8c16
-2025-04-12T03:42:46.291-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@73e1ecd0
-2025-04-12T03:42:46.291-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@73e1ecd0
-2025-04-12T03:42:46.291-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@11eec06b
-2025-04-12T03:42:46.291-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@65600fb3
-2025-04-12T03:42:46.291-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@25ce435
-2025-04-12T03:42:46.291-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@7ea71fc2
-2025-04-12T03:42:46.291-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@19ad75e5
-2025-04-12T03:42:46.296-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@35f7969d
-2025-04-12T03:42:46.297-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@35f7969d
-2025-04-12T03:42:46.298-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@60deefed
-2025-04-12T03:42:46.298-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@49754e74
-2025-04-12T03:42:46.298-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@31881aa2
-2025-04-12T03:42:46.299-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@1b46392c
-2025-04-12T03:42:46.299-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@cf01c2e
-2025-04-12T03:42:46.299-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@6f15f52a
-2025-04-12T03:42:46.299-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@1eb9bf60
-2025-04-12T03:42:46.299-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@341c6ac2
-2025-04-12T03:42:46.299-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@38811103
-2025-04-12T03:42:46.477-03:00  INFO 10864 --- [medico] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-12T03:42:46.572-03:00  INFO 10864 --- [medico] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-04-12T03:42:46.583-03:00 DEBUG 10864 --- [medico] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
-2025-04-12T03:42:46.583-03:00 DEBUG 10864 --- [medico] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
-2025-04-12T03:42:46.584-03:00 DEBUG 10864 --- [medico] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
-2025-04-12T03:42:46.587-03:00 DEBUG 10864 --- [medico] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
-2025-04-12T03:42:46.589-03:00 DEBUG 10864 --- [medico] [main] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
-2025-04-12T03:42:46.595-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
-2025-04-12T03:42:46.595-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
-2025-04-12T03:42:46.596-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
-2025-04-12T03:42:46.599-03:00 DEBUG 10864 --- [medico] [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2729bb71] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@55071497]
-2025-04-12T03:42:47.080-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.SQL                        : 
-    create global temporary table HTE_pokemon(ataque integer, data_captura date, defesa integer, niveis_pokemon tinyint, pontos_de_vida integer, rn_ integer not null, tipo_pokemon tinyint, velocidade integer, id bigint, cpf_pokemon varchar(255), nome_pokemon varchar(255), primary key (rn_)) TRANSACTIONAL
-2025-04-12T03:42:47.159-03:00  INFO 10864 --- [medico] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-12T03:42:47.159-03:00 DEBUG 10864 --- [medico] [main] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@2729bb71] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@23aaa756]
-2025-04-12T03:42:47.171-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.SQL                        : 
-    drop table if exists pokemon cascade 
-2025-04-12T03:42:47.172-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.SQL                        : 
-    drop sequence if exists seq_pokemon
-2025-04-12T03:42:47.177-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.SQL                        : 
-    create sequence seq_pokemon start with 1 increment by 50
-2025-04-12T03:42:47.181-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.SQL                        : 
-    create table pokemon (
-        ataque integer not null,
-        data_captura date,
-        defesa integer not null,
-        niveis_pokemon tinyint check (niveis_pokemon between 0 and 3),
-        pontos_de_vida integer not null,
-        tipo_pokemon tinyint check (tipo_pokemon between 0 and 16),
-        velocidade integer not null,
-        id bigint not null,
-        cpf_pokemon varchar(255) not null unique,
-        nome_pokemon varchar(255) not null,
-        primary key (id)
-    )
-2025-04-12T03:42:47.190-03:00 TRACE 10864 --- [medico] [main] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@23aaa756] for TypeConfiguration
-2025-04-12T03:42:47.190-03:00  INFO 10864 --- [medico] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-12T03:42:47.557-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.SQL                        : 
-    select
-        next value for seq_pokemon
-2025-04-12T03:42:47.618-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.SQL                        : 
-    insert 
-    into
-        pokemon
-        (ataque, cpf_pokemon, data_captura, defesa, niveis_pokemon, nome_pokemon, pontos_de_vida, tipo_pokemon, velocidade, id) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2025-04-12T03:42:47.626-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.SQL                        : 
-    select
-        next value for seq_pokemon
-2025-04-12T03:42:47.627-03:00 DEBUG 10864 --- [medico] [main] org.hibernate.SQL                        : 
-    insert 
-    into
-        pokemon
-        (ataque, cpf_pokemon, data_captura, defesa, niveis_pokemon, nome_pokemon, pontos_de_vida, tipo_pokemon, velocidade, id) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2025-04-12T03:42:47.761-03:00  WARN 10864 --- [medico] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-12T03:42:48.104-03:00  INFO 10864 --- [medico] [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdaplcurso'
-2025-04-12T03:42:48.163-03:00  INFO 10864 --- [medico] [main] c.v.aula.AulaApplicationTests            : Started AulaApplicationTests in 3.713 seconds (process running for 4.549)
-2025-04-12T03:42:48.578-03:00  INFO 10864 --- [medico] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-12T03:42:48.580-03:00 DEBUG 10864 --- [medico] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
-    drop table if exists pokemon cascade 
-2025-04-12T03:42:48.581-03:00 DEBUG 10864 --- [medico] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
-    drop sequence if exists seq_pokemon
-2025-04-12T03:42:48.582-03:00 TRACE 10864 --- [medico] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@23aaa756] for TypeConfiguration
-2025-04-12T03:42:48.582-03:00 DEBUG 10864 --- [medico] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@2e69567f] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@23aaa756]
-2025-04-12T03:42:48.583-03:00  INFO 10864 --- [medico] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-12T03:42:48.586-03:00  INFO 10864 --- [medico] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2025-04-12T03:43:08.666-03:00  INFO 15424 --- [medico] [restartedMain] c.victor_pokemon.aula.AulaApplication    : Starting AulaApplication using Java 17.0.12 with PID 15424 (C:\ProjetoSpring\Pokemon\target\classes started by Vitinho in C:\ProjetoSpring\Pokemon)
-2025-04-12T03:43:08.669-03:00  INFO 15424 --- [medico] [restartedMain] c.victor_pokemon.aula.AulaApplication    : The following 1 profile is active: "test"
-2025-04-12T03:43:08.733-03:00  INFO 15424 --- [medico] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-04-12T03:43:08.734-03:00  INFO 15424 --- [medico] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-04-12T03:43:09.214-03:00  INFO 15424 --- [medico] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-04-12T03:43:09.260-03:00  INFO 15424 --- [medico] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 38 ms. Found 1 JPA repository interface.
-2025-04-12T03:43:10.069-03:00  INFO 15424 --- [medico] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2025-04-12T03:43:10.086-03:00  INFO 15424 --- [medico] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2025-04-12T03:43:10.086-03:00  INFO 15424 --- [medico] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.39]
-2025-04-12T03:43:10.123-03:00  INFO 15424 --- [medico] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2025-04-12T03:43:10.124-03:00  INFO 15424 --- [medico] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1389 ms
-2025-04-12T03:43:10.277-03:00  INFO 15424 --- [medico] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2025-04-12T03:43:10.463-03:00  INFO 15424 --- [medico] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bdaplcurso user=SA
-2025-04-12T03:43:10.464-03:00  INFO 15424 --- [medico] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2025-04-12T03:43:10.510-03:00  INFO 15424 --- [medico] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-04-12T03:43:10.566-03:00  INFO 15424 --- [medico] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.11.Final
-2025-04-12T03:43:10.606-03:00  INFO 15424 --- [medico] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2025-04-12T03:43:10.661-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@68e417c4
-2025-04-12T03:43:10.662-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@68e417c4
-2025-04-12T03:43:10.662-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@68e417c4
-2025-04-12T03:43:10.662-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@1270556
-2025-04-12T03:43:10.662-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@1270556
-2025-04-12T03:43:10.662-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@7e95387d
-2025-04-12T03:43:10.662-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@7e95387d
-2025-04-12T03:43:10.662-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@35eb73b0
-2025-04-12T03:43:10.663-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@35eb73b0
-2025-04-12T03:43:10.663-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@7df908fe
-2025-04-12T03:43:10.663-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@7df908fe
-2025-04-12T03:43:10.663-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@7df908fe
-2025-04-12T03:43:10.663-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@444dafa2
-2025-04-12T03:43:10.663-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@444dafa2
-2025-04-12T03:43:10.663-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@444dafa2
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@485fff10
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@485fff10
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@61466906
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@137424b9
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@137424b9
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@4bcd11bd
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@7c5dd0ab
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@2e81987f
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@2e81987f
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@2e81987f
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@1ce220fa
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@1ce220fa
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@1ce220fa
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@3f019a22
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@3f019a22
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@3f019a22
-2025-04-12T03:43:10.664-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@2dcbdde1
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@2dcbdde1
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@2dcbdde1
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@fabea47
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@fabea47
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@fabea47
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@243eeb8
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@243eeb8
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@3120a458
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@3120a458
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@42f75348
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@42f75348
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@42f75348
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@12de6083
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@f757a4e
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@f757a4e
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@3b430d9c
-2025-04-12T03:43:10.665-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@435664af
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@435664af
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@435664af
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@226dde3e
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@6ee7737
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@2562b59b
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@5561ce84
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@5561ce84
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@19b16638
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@19b16638
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@6c93edf6
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@5ced5392
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@723a365
-2025-04-12T03:43:10.666-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@15b1951f
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@663e2602
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@50798894
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@4adb2175
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@4adb2175
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@53db5c5c
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@53db5c5c
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@44c26e13
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@44c26e13
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@58e37337
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@58e37337
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@4ba021d7
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@4ba021d7
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@4210bd43
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@15f5f1e4
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@56cc42a6
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@56cc42a6
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@1ca87f31
-2025-04-12T03:43:10.667-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@5b953342
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@61559305
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@55b824fb
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@55b824fb
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@a36988a
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@78cbb5ad
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@354bdc0a
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@354bdc0a
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@21c0a9a4
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@21c0a9a4
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@1f8c87de
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@1f8c87de
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@1f8c87de
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@3a4f3f5f
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@3a4f3f5f
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@3a4f3f5f
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@510f0f90
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@7526019c
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@eefda91
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@eefda91
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@4d99b9d4
-2025-04-12T03:43:10.668-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@4d99b9d4
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@4d99b9d4
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@64c34c78
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@212c8b9d
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@51e7f67b
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@51e7f67b
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@5130b28a
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@5130b28a
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@5130b28a
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@2fee8458
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@2fee8458
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@6a5b825b
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@6a5b825b
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@461f545
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@461f545
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@5091b3a1
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@5091b3a1
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@b8631af
-2025-04-12T03:43:10.669-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@b8631af
-2025-04-12T03:43:10.670-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@3d7933de
-2025-04-12T03:43:10.670-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float_vector -> org.hibernate.type.BasicTypeReference@36b922e9
-2025-04-12T03:43:10.670-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double_vector -> org.hibernate.type.BasicTypeReference@6b689324
-2025-04-12T03:43:10.670-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte_vector -> org.hibernate.type.BasicTypeReference@51d9ccaf
-2025-04-12T03:43:10.670-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@25cae289
-2025-04-12T03:43:10.675-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@2ea5f658
-2025-04-12T03:43:10.675-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@2ea5f658
-2025-04-12T03:43:10.677-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@73f4e961
-2025-04-12T03:43:10.677-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@32c6b9ca
-2025-04-12T03:43:10.677-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@70818625
-2025-04-12T03:43:10.677-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@3fcf8a30
-2025-04-12T03:43:10.677-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@6ba4d349
-2025-04-12T03:43:10.677-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@6cab2f1e
-2025-04-12T03:43:10.677-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@10672c00
-2025-04-12T03:43:10.677-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@53baaa36
-2025-04-12T03:43:10.677-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@1e491593
-2025-04-12T03:43:10.848-03:00  INFO 15424 --- [medico] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-04-12T03:43:10.908-03:00  INFO 15424 --- [medico] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
-	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
-	Database driver: undefined/unknown
-	Database version: 2.3.232
-	Autocommit mode: undefined/unknown
-	Isolation level: undefined/unknown
-	Minimum pool size: undefined/unknown
-	Maximum pool size: undefined/unknown
-2025-04-12T03:43:10.917-03:00 DEBUG 15424 --- [medico] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
-2025-04-12T03:43:10.917-03:00 DEBUG 15424 --- [medico] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
-2025-04-12T03:43:10.918-03:00 DEBUG 15424 --- [medico] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
-2025-04-12T03:43:10.920-03:00 DEBUG 15424 --- [medico] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
-2025-04-12T03:43:10.922-03:00 DEBUG 15424 --- [medico] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
-2025-04-12T03:43:10.927-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
-2025-04-12T03:43:10.927-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
-2025-04-12T03:43:10.927-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
-2025-04-12T03:43:10.931-03:00 DEBUG 15424 --- [medico] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@188521b0] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@67655e7d]
-2025-04-12T03:43:11.447-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.SQL                        : 
-    create global temporary table HTE_pokemon(ataque integer, data_captura date, defesa integer, niveis_pokemon tinyint, pontos_de_vida integer, rn_ integer not null, tipo_pokemon tinyint, velocidade integer, id bigint, cpf_pokemon varchar(255), nome_pokemon varchar(255), primary key (rn_)) TRANSACTIONAL
-2025-04-12T03:43:11.527-03:00  INFO 15424 --- [medico] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-04-12T03:43:11.527-03:00 DEBUG 15424 --- [medico] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@188521b0] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@4cc5dcb7]
-2025-04-12T03:43:11.535-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.SQL                        : 
-    drop table if exists pokemon cascade 
-2025-04-12T03:43:11.536-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.SQL                        : 
-    drop sequence if exists seq_pokemon
-2025-04-12T03:43:11.538-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.SQL                        : 
-    create sequence seq_pokemon start with 1 increment by 50
-2025-04-12T03:43:11.541-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.SQL                        : 
-    create table pokemon (
-        ataque integer not null,
-        data_captura date,
-        defesa integer not null,
-        niveis_pokemon tinyint check (niveis_pokemon between 0 and 3),
-        pontos_de_vida integer not null,
-        tipo_pokemon tinyint check (tipo_pokemon between 0 and 16),
-        velocidade integer not null,
-        id bigint not null,
-        cpf_pokemon varchar(255) not null unique,
-        nome_pokemon varchar(255) not null,
-        primary key (id)
-    )
-2025-04-12T03:43:11.547-03:00 TRACE 15424 --- [medico] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@4cc5dcb7] for TypeConfiguration
-2025-04-12T03:43:11.548-03:00  INFO 15424 --- [medico] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-04-12T03:43:11.915-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.SQL                        : 
-    select
-        next value for seq_pokemon
-2025-04-12T03:43:11.993-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.SQL                        : 
-    insert 
-    into
-        pokemon
-        (ataque, cpf_pokemon, data_captura, defesa, niveis_pokemon, nome_pokemon, pontos_de_vida, tipo_pokemon, velocidade, id) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2025-04-12T03:43:12.004-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.SQL                        : 
-    select
-        next value for seq_pokemon
-2025-04-12T03:43:12.005-03:00 DEBUG 15424 --- [medico] [restartedMain] org.hibernate.SQL                        : 
-    insert 
-    into
-        pokemon
-        (ataque, cpf_pokemon, data_captura, defesa, niveis_pokemon, nome_pokemon, pontos_de_vida, tipo_pokemon, velocidade, id) 
-    values
-        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2025-04-12T03:43:12.079-03:00  WARN 15424 --- [medico] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-04-12T03:43:12.416-03:00  INFO 15424 --- [medico] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:bdaplcurso'
-2025-04-12T03:43:12.480-03:00  INFO 15424 --- [medico] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2025-04-12T03:43:12.518-03:00  INFO 15424 --- [medico] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2025-04-12T03:43:12.527-03:00  INFO 15424 --- [medico] [restartedMain] c.victor_pokemon.aula.AulaApplication    : Started AulaApplication in 4.299 seconds (process running for 4.671)
-2025-04-12T03:43:16.253-03:00  INFO 15424 --- [medico] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
-2025-04-12T03:43:16.358-03:00  INFO 15424 --- [medico] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
-2025-04-12T03:43:16.360-03:00  INFO 15424 --- [medico] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-04-12T03:43:16.360-03:00 DEBUG 15424 --- [medico] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
-    drop table if exists pokemon cascade 
-2025-04-12T03:43:16.361-03:00 DEBUG 15424 --- [medico] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
-    drop sequence if exists seq_pokemon
-2025-04-12T03:43:16.362-03:00 TRACE 15424 --- [medico] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@4cc5dcb7] for TypeConfiguration
-2025-04-12T03:43:16.362-03:00 DEBUG 15424 --- [medico] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@6e2582b4] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4cc5dcb7]
-2025-04-12T03:43:16.365-03:00  WARN 15424 --- [medico] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
-2025-04-12T03:43:16.365-03:00  INFO 15424 --- [medico] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2025-04-12T03:43:16.367-03:00  INFO 15424 --- [medico] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-09-14T00:51:23.270-03:00 TRACE 12780 --- [pokemon] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@2a5056] for TypeConfiguration
+2025-09-14T00:51:23.270-03:00 DEBUG 12780 --- [pokemon] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@1c390080] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@2a5056]
+2025-09-14T00:51:23.275-03:00  WARN 12780 --- [pokemon] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-232]
+2025-09-14T00:51:23.276-03:00  INFO 12780 --- [pokemon] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-09-14T00:51:23.277-03:00  INFO 12780 --- [pokemon] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

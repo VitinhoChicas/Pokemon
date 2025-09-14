@@ -4,6 +4,8 @@ package com.victor_pokemon.aula.resources;
 import com.victor_pokemon.aula.domains.Pokemon;
 import com.victor_pokemon.aula.domains.dtos.PokemonDTO;
 import com.victor_pokemon.aula.services.PokemonService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -17,6 +19,10 @@ import java.util.List;
 //Marca uma classe como controller de uma API REST
 //Tudo que é retornado pelos metodos @RestController será enviado diretamente no corpo da resposta (em JSON, por padrão)
 
+
+@Tag(name = "Pokemon", description="API para Gerenciamento de Pokemon")
+
+
 @RequestMapping(value = "/pokemon")
 // Define o caminho da URl que sera Usada para acessar os métodos de um controller
 public class PokemonResource {
@@ -27,12 +33,15 @@ public class PokemonResource {
 
     //Este metodo retorna todos os pokémons em formato DTO com status HTTP 200.
     @GetMapping
+
+    @Operation(summary = "Faz  uma busca dos pokemons cadastrados", description = "Retorna lista com todos os pokemons cadastrados")
     public ResponseEntity<List<PokemonDTO>> findAll(){
         return  ResponseEntity.ok().body(pokeService.findAll());
     }
 
     //Este metodo faz uma busca pelo id especifico
     @GetMapping(value = "/{id}")
+    @Operation(summary = "Faz  uma busca por id de um pokemon cadastrados", description = "Retorna as informações do pokemon procurado pelo id informado")
     public ResponseEntity<PokemonDTO> findbyId(@PathVariable Long id){
         Pokemon obj = this.pokeService.findbyId(id);
         return ResponseEntity.ok().body(new PokemonDTO(obj));
@@ -41,13 +50,15 @@ public class PokemonResource {
 
     //Este metodo faz uma buscar por cpfpokemon
     @GetMapping(value = "/cpfPokemon/{cpfPokemon}")
+    @Operation(summary = "Faz  uma busca por cpf do pokemon  cadastrados", description = "Retorna as informações do pokemon procurado pelo cpf informado")
     public ResponseEntity<PokemonDTO> findById(@PathVariable String cpfPokemon){
         Pokemon obj = this.pokeService.findbyCpfPokemon(cpfPokemon);
         return ResponseEntity.ok().body(new PokemonDTO(obj));
     }
 
-    //Metodo para a criação de um novo pokemon
+    //Metodo é o metodo para a criação de um novo pokemon
     @PostMapping
+    @Operation(summary = "Cria um novo pokemon", description = "Cria um novo pokemon de acordo com as informações inseridas ")
     public ResponseEntity<PokemonDTO> create(@Valid  @RequestBody PokemonDTO pokemonDTO){
         Pokemon pokemon = pokeService.create(pokemonDTO);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("{/id}").buildAndExpand(pokemon.getId()).toUri();
@@ -57,6 +68,7 @@ public class PokemonResource {
 
     //Metodo para alterar um Pokemon
     @PutMapping(value = "/{id}")
+    @Operation(summary = "Altera um  pokemon", description = "Altera um pokemon existente")
     public ResponseEntity<PokemonDTO> update(@PathVariable Long id, @Valid @RequestBody PokemonDTO objDTO){
         Pokemon Obj = pokeService.update(id, objDTO);
         return  ResponseEntity.ok().body(new PokemonDTO(Obj));
@@ -64,6 +76,7 @@ public class PokemonResource {
 
     //Metodo para deletar um Pokemon
     @DeleteMapping(value =  "/{id}")
+    @Operation(summary = "Deleta um  pokemon", description = "Deleta um pokemon de acordo com o seu id")
     public ResponseEntity<PokemonDTO> delete(@PathVariable Long id){
         pokeService.deletePokemon(id);
         return ResponseEntity.noContent().build();

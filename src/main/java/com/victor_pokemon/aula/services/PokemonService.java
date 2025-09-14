@@ -19,7 +19,7 @@ public class PokemonService {
     @Autowired
     private PokemonRepository pokeRepo;
 
-    //Restorna uma Lista de PokemonDTO
+    //Retorna uma Lista de PokemonDTO
     public List<PokemonDTO> findAll(){
         return  pokeRepo.findAll().stream().map(obj -> new PokemonDTO(obj))
                 .collect(Collectors.toList());
@@ -46,7 +46,7 @@ public class PokemonService {
         return pokeRepo.save(obj);
     }
 
-    //Metodo para validar se o cpf do pokemon e não deixar duplicidade
+    //Metodo para validar  o cpf do pokemon e não deixar duplicidade
     private void validaCpf(PokemonDTO pokemonDTO){
         Optional<Pokemon> obj = pokeRepo.findByCpfPokemon(pokemonDTO.getCpfPokemon());
         if(obj.isPresent() && obj.get().getId() != pokemonDTO.getId()){
