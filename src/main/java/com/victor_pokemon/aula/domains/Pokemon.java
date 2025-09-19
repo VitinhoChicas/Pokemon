@@ -52,7 +52,7 @@ public class Pokemon {
     @Positive
     private int velocidade;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCaptura = LocalDate.now();
 
     @NotNull

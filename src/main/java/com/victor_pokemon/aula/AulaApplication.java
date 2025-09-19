@@ -7,6 +7,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 
+
 @ComponentScan(basePackages = "com.victor_pokemon")
 @EntityScan(basePackages = {"com.victor_pokemon.aula.domains", "com.victor_pokemon.aula.domains.enums"})
 @EnableJpaRepositories(basePackages = "com.victor_pokemon.aula.repositories")

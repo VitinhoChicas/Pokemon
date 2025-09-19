@@ -56,7 +56,7 @@ O Spring e o Java sabem como converter um no outro:
     @Positive(message = "O valor deve ser maior que zero")
     private int velocidade;
 
-    @JsonFormat(pattern = "dd/MM/yyyy")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataCaptura = LocalDate.now();
 
 

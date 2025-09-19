@@ -61,7 +61,7 @@ public class PokemonResource {
     @Operation(summary = "Cria um novo pokemon", description = "Cria um novo pokemon de acordo com as informações inseridas ")
     public ResponseEntity<PokemonDTO> create(@Valid  @RequestBody PokemonDTO pokemonDTO){
         Pokemon pokemon = pokeService.create(pokemonDTO);
-        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("{/id}").buildAndExpand(pokemon.getId()).toUri();
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(pokemon.getId()).toUri();
         return ResponseEntity.created(uri).build();
     }
     //A anotação @Valid é usada no Spring (e outras frameworks Java) para ativar a validação automática dos dados de entrada, com base nas anotações de validação presentes na sua classe — como @NotNull, @NotBlank

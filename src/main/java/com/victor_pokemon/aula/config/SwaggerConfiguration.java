@@ -13,16 +13,16 @@ public class SwaggerConfiguration {
     @Bean
     public GroupedOpenApi publicApi(){
         return GroupedOpenApi.builder()
-                .group("medico")
+                .group("Pokemon")
                 .pathsToMatch("/**")
-                .packagesToScan("com.curso.resources")
+                .packagesToScan("com.victor_pokemon.aula.resources")
                 .build();
     }
 
     @Bean
     public OpenAPI customOpenAPI(){
-        return new OpenAPI().info(new Info().title("Medico")
-                .description("Medico")
+        return new OpenAPI().info(new Info().title("Pokemon")
+                .description("Pokemon")
                 .version("1.0")
                 .contact(new Contact().name("Curso Spring")
                         .url("https://github.com/VitinhoChicas/Pokemon")
